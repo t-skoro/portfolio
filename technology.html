@@ -3,12 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Портфолио</title>
-		<link
-			rel="SHORTCUT ICON"
-			href="./img/logo/logo.ico"
-			type="image/x-icon"
-		/>
+		<title>Технологии</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&display=swap"
 			rel="stylesheet"
@@ -16,10 +11,9 @@
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="stylesheet" href="./css/media.css" />
 	</head>
-
 	<body>
-		<header class="header" id="header">
-			<aside class="sidebar sidebar--main">
+		<main>
+			<aside class="sidebar sidebar--project">
 				<a href="#" class="burger sidebar-burger">
 					<img
 						src="./img/icons/door-closed-solid.svg"
@@ -27,7 +21,7 @@
 					/>
 				</a>
 				<div class="sidebar-logo">
-					<a href="#" class="logo">
+					<a href="index.html" class="logo">
 						<img
 							src="img/logo/logo-7.png"
 							alt="web-разработка"
@@ -44,7 +38,9 @@
 				<nav class="side-menu sidebar-menu">
 					<ul class="side-menu-list">
 						<li class="side-menu-item">
-							<a class="side-menu-link side-menu-link--activ" href="#">Главная</a>
+							<a class="side-menu-link" href="index.html"
+								>Главная</a
+							>
 						</li>
 						<li class="side-menu-item">
 							<a class="side-menu-link" href="forest-travel.html"
@@ -57,7 +53,9 @@
 							>
 						</li>
 						<li class="side-menu-item">
-							<a class="side-menu-link" href="technology.html"
+							<a
+								class="side-menu-link side-menu-link--activ"
+								href="#"
 								>Технологии</a
 							>
 						</li>
@@ -83,103 +81,60 @@
 					</ul>
 				</nav>
 			</aside>
-			<h1 class="header-title">Татьяна Бочарова</h1>
-			<p class="header-subtitle">
-				фрилансер, frontend&#8209;разработчик, верстальщик сайтов
-			</p>
-			<a href="#portfolio" class="header-arrow">
-				<img src="./img/header/chevron-down.svg" alt="Arrow" />
-			</a>
-		</header>
 
-		<main>
-			<section class="portfolio" id="portfolio">
+			<section class="content-inner">
 				<div class="container">
-					<h2 class="portfolio-header">Портфолио</h2>
-
-					<!-- portfolio-cards-wrapper -->
-					<div class="portfolio-cards-wrapper">
-						<!-- Card -->
-						<div class="card">
-							<a
-								href="forest-travel.html#project-unit"
-								class="card-link"
-								target="_blank"
-							>
-								<img
-									class="card-img"
-									src="./img/portfolio/unit.jpg"
-									alt="Адаптивный лендинг"
-								/>
-								<h3 class="card-title">Адаптивный лендинг</h3>
-								<p>
-									Вёрстка Landing Page с мобильной адаптацией
-								</p></a
-							>
-						</div>
-						<!-- //Card -->
-
-						<!-- Card -->
-						<div class="card">
-							<a
-								href="forest-travel.html#project-forest"
-								class="card-link"
-								target="_blank"
-							>
-								<img
-									class="card-img"
-									src="./img/portfolio/forest.jpg"
-									alt="Многостраничный сайт"
-								/>
-								<h3 class="card-title">Многостраничный сайт</h3>
-								<p>Вёрстка многостраничного сайта</p></a
-							>
-						</div>
-						<!-- //Card -->
-
-						<!-- Card -->
-						<div class="card">
-							<a
-								href="forest-travel.html#project-elegance"
-								class="card-link"
-								target="_blank"
-							>
-								<img
-									class="card-img"
-									src="./img/portfolio/elegance-1.jpg"
-									alt="Онлайн-магазин"
-								/>
-								<h3 class="card-title">Интернет-магазин</h3>
-								<p>
-									Верстка сайта интернет-магазина с мобильной
-									адаптацией
-								</p></a
-							>
-						</div>
-						<!-- //Card -->
-
-						<!-- Card -->
-						<div class="card">
-							<a
-								href="forest-travel.html#project-flowers"
-								class="card-link"
-								target="_blank"
-							>
-								<img
-									class="card-img"
-									src="./img/portfolio/flowers.jpg"
-									alt="Интернет-магазин"
-								/>
-								<h3 class="card-title">Интернет-магазин</h3>
-								<p>
-									Верстка сайта интернет-магазина с мобильной
-									адаптацией
-								</p></a
-							>
-						</div>
-						<!-- //Card -->
+					<h1 class="project-header">Технологии</h1>
+					<div class="project-description project-description--left">
+						<h2 class="content-inner-subtitle">
+							Используемый stack web&#8209;технологий при разработке
+							проектов
+						</h2>
+						<h4>Информация для IT&#8209;специалистов</h4>
+						<ul class="project-text-list">
+							<li class="project-text-item">
+								<strong>Языки: <br /></strong>HTML, CSS,
+								JavaScript, PHP
+							</li>
+							<li class="project-text-item">
+								<strong>CSS препроцессор: <br /></strong>Less
+							</li>
+							<li class="project-text-item">
+								<strong>Библиотеки: <br /></strong>Bootstrap v5,
+								JQuery, Swiper Slider JS, Owl Carousel JS,
+								Fancybox JS, Isotope JS
+							</li>
+							<li class="project-text-item">
+								<strong
+									>Система контроля версий (Version Control
+									System, VCS): <br /></strong
+								>Git, сервис GitHub
+							</li>
+							<li class="project-text-item">
+								<strong
+									>Система управления контентом (Content
+									Management System, CMS): <br /></strong
+								>WordPress
+							</li>
+							<li class="project-text-item">
+								<strong>Графические редакторы: <br /></strong
+								>Adobe Photoshop, Figma, плагин Pixel Perfect
+							</li>
+							<li class="project-text-item">
+								<strong
+									>Адаптивная мобильная вёрстка:
+									<br /></strong
+								>Mobile First, Desktop First подходы
+							</li>
+							<li class="project-text-item">
+								<strong>Настройка сайта: <br /></strong
+								>Настройка домена и хостинга, FTP-клиента
+							</li>
+						</ul>
 					</div>
-					<!-- //portfolio-cards-wrapper -->
+					<!-- <a href="index.html" class="project-btn-back"
+						>ВЕРНУТЬСЯ НА ГЛАВНУЮ</a
+					> -->
 				</div>
 			</section>
 		</main>
@@ -252,13 +207,6 @@
 			</div>
 		</footer>
 
-		<!-- Библиотеки и плагины -->
-		<script src="libs/jquery/jquery-3.5.1.min.js"></script>
-		<script src="libs/vide/jquery.vide.min.js"></script>
-
-		<!-- Собственные скрипты и вызовы библиотек -->
-		<script src="js/index.js"></script>
-		<script src="js/main.js"></script>
 		<script src="js/sidebar-menu.js"></script>
 	</body>
 </html>

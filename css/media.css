@@ -23,8 +23,8 @@
 		max-width: 110px;
 	}
 	.sidebar {
-		width: 70px;
-		position: absolute;
+		width: 50px;
+		position: fixed;
 		left: 0;
 		top: 0;
 		padding-top: 0;
@@ -33,13 +33,17 @@
 		box-sizing: border-box;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-evenly;
 		flex-direction: column;
 		transition: width 0.3s;
 	}
 	.sidebar--opened {
-		width: 300px;
-		padding: 0 3% 0 4%;
+		width: 320px;
+		padding: 0 3% 0 3%;
+		z-index: 9;
+	}
+	.sidebar--main {
+		position: absolute;
 	}
 	.sidebar-menu {
 		position: absolute;
@@ -52,22 +56,10 @@
 		text-align: center;
 		transition-delay: 0.1s;
 	}
-	/* .sidebar-burger-icon {
-		width: 29px;
-		height: 29px;
-		fill: var(--yellow);
-	} */
-	/* .sidebar-burger {
-		display: block;
-		position: absolute;
-		top: 27px;
-		left: 50%;
-		transform: translate(-50%);
-	} */
-	.sidebar--opened .sidebar-header {
+	.sidebar--opened .sidebar-logo {
 		display: flex;
 	}
-	.sidebar-header {
+	.sidebar-logo {
 		position: absolute;
 		top: 20px;
 		left: 0;
@@ -81,8 +73,6 @@
 		top: 0;
 		right: 23px;
 	}
-	
-
 	.side-menu-list {
 		display: inline-block;
 	}
@@ -95,8 +85,8 @@
 	.side-menu-link {
 		font-size: 14px;
 		font-weight: 600;
+		padding: 0;
 	}
-
 	.burger {
 		display: block;
 		position: absolute;
@@ -104,24 +94,35 @@
 		left: center;
 		z-index: 9;
 	}
-
 	.btn-clouse {
 		display: block;
-		width: 50px;
-		height: 50px;
+		width: 35px;
+		height: 35px;
 	}
-
 	.sidebar--opened .sidebar-burger {
 		display: none;
+	}
+	.project-img {
+		margin-bottom: 20px;
+	}
+	.content-inner {
+		padding-top: 40px;
+		padding-right: 10px;
+		padding-bottom: 40px;
+		padding-left: 60px;
 	}
 }
 
 @media (max-width: 768px) {
+	.header {
+		padding-right: 10px;
+		padding-left: 60px;
+	}
 	.header-title {
 		font-size: 32px;
 	}
 	.header-subtitle {
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.portfolio {
 		padding-top: 40px;
@@ -169,24 +170,34 @@
 		margin: 0;
 		margin-top: 15px;
 	}
-
+	.top {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
 	.project {
-		padding: 40px 0 60px;
+		padding-left: 35px;
 	}
 	.project-header {
-		font-size: 28px;
-		margin-bottom: 30px;
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+	.content-inner-subtitle {
+		font-size: 18px;
 	}
 	.project-img {
 		margin-bottom: 20px;
 	}
-	.project-description {
+	/* .project-description {
 		margin-bottom: 50px;
-	}
+	} */
 	.project-btn-back {
-		padding: 0 15px;
+		font-size: 13px;
+		padding: 0;
+		margin-top: 30px;
+		margin-bottom: 50px;
 		width: 100%;
-		max-width: 320px;
+		max-width: 300px;
 	}
 }
 

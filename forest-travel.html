@@ -12,12 +12,88 @@
 		<link rel="stylesheet" href="./css/media.css" />
 	</head>
 	<body>
-		<main>
-			<article class="project">
+		<aside class="sidebar sidebar--project">
+			<a href="#" class="burger sidebar-burger">
+				<img src="./img/icons/door-closed-solid.svg" alt="открыть" />
+			</a>
+			<div class="sidebar-logo">
+				<a href="index.html" class="logo">
+					<img
+						src="img/logo/logo-7.png"
+						alt="web-разработка"
+						class="logo-image"
+					/>
+				</a>
+				<a href="#" class="btn-clouse sidebar-close">
+					<img src="./img/icons/door-open-solid.svg" alt="закрыть" />
+				</a>
+			</div>
+			<nav class="side-menu sidebar-menu">
+				<ul class="side-menu-list">
+					<li class="side-menu-item">
+						<a class="side-menu-link" href="index.html">Главная</a>
+					</li>
+					<li class="side-menu-item">
+						<a
+							class="side-menu-link side-menu-link--activ"
+							href="forest-travel.html"
+							>Проекты</a
+						>
+					</li>
+					<li class="side-menu-item">
+						<a class="side-menu-link" href="./services.html"
+							>Услуги</a
+						>
+					</li>
+					<li class="side-menu-item">
+						<a class="side-menu-link" href="technology.html"
+							>Технологии</a
+						>
+					</li>
+					<li class="side-menu-item">
+						<a class="side-menu-link" href="mailto:siluana@li.ru">
+							<div class="mail-title">e-mail:</div>
+							<div class="mail-content">siluana@li.ru</div>
+						</a>
+					</li>
+					<li class="side-menu-item">
+						<a class="side-menu-link" href="tel:+79090333766">
+							<div class="phone-title">контактный телефон:</div>
+							<div class="phone-content">+7 9090 333 766</div></a
+						>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<main class="project-wrapper">
+			<article class="project" id="project-unit">
 				<div class="container">
-					<h1 class="project-header">
-						Проект «Форест-тревел»
-					</h1>
+					<h1 class="project-header">Проект «ЮНИТ»</h1>
+					<div class="project-img">
+						<img
+							src="./img/project/unit-collage.jpg"
+							alt="Верстка сайта «UNIT»"
+						/>
+					</div>
+					<div class="project-description">
+						<p>
+							Верстка сайта Landing Page с мобильной адаптацией
+							под планшеты и смартфоны. Публикация новостей,
+							статей, текстовых материалов. Карусель с отзывами,
+							форма для обратной связи.
+						</p>
+						<p>
+							Адрес сайта:<br />
+							<a href="https://t-skoro.github.io/unit/"
+								>https://t-skoro.github.io/unit</a
+							>
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="project" id="project-forest">
+				<div class="container">
+					<h1 class="project-header">Проект «Форест&#8209;тревел»</h1>
 					<div class="project-img">
 						<img
 							src="./img/project/forest-full.jpg"
@@ -31,15 +107,65 @@
 							связи, страница со статьей.
 						</p>
 						<p>
-							Адрес сайта:<br>	
+							Адрес сайта:<br />
 							<a href="https://t-skoro.github.io/forest-travel"
 								>https://t-skoro.github.io/forest-travel</a
 							>
 						</p>
 					</div>
-					<a href="index.html" class="project-btn-back"
+				</div>
+			</article>
+			<article class="project" id="project-elegance">
+				<div class="container">
+					<h1 class="project-header">Проект «Elegance Shop»</h1>
+					<div class="project-img">
+						<img
+							src="./img/project/elegance-collage.jpg"
+							alt="Верстка сайта «Форест-тревел»"
+						/>
+					</div>
+					<div class="project-description">
+						<p>
+							Верстка сайта интернет-магазина. Главная страница.
+							Каталог товаров, размещение статей, постов, сбор
+							подписок на e&#8209;mail&#8209;рассылку.
+						</p>
+						<p>
+							Адрес сайта:<br />
+							<a href="https://t-skoro.github.io/elegance"
+								>https://t-skoro.github.io/elegance</a
+							>
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="project" id="project-flowers">
+				<div class="container">
+					<h1 class="project-header">Проект «Flowers»</h1>
+					<div class="project-img">
+						<img
+							src="./img/project/flowers-collage-1.jpg"
+							alt="Верстка сайта «Форест-тревел»"
+						/>
+					</div>
+					<div class="project-description">
+						<p>
+							Верстка сайта интернет-магазина. Главная страница.
+							Каталог товаров, отзывы клиентов, слайдер с
+							фотогалереей, модальные окна с формой обратной
+							связи. Счётчик количества товаров. Управление сайтом
+							через CMS WordPress
+						</p>
+						<p>
+							Адрес сайта:<br />
+							<a href="https://t-skoro.github.io/flowers"
+								>https://t-skoro.github.io/flowers</a
+							>
+						</p>
+					</div>
+					<!-- <a href="index.html" class="project-btn-back"
 						>ВЕРНУТЬСЯ НА ГЛАВНУЮ</a
-					>
+					> -->
 				</div>
 			</article>
 		</main>
@@ -52,13 +178,8 @@
 						<div class="footer-copyright-name">
 							&copy; Татьяна Бочарова
 						</div>
-						<p>HTML / CSS / JS вёрстка и разработка сайтов</p>
-						<p>
-							Макет сайта от
-							<a href="https://WebCademy.ru" target="_blank"
-								>WebCademy.ru</a
-							>
-						</p>
+						<p>HTML / CSS / JS <br> вёрстка и разработка сайтов</p>
+						<!-- <p>Макет сайта создан при участии WebCademy.ru</p> -->
 					</div>
 					<!-- //footer-copyright -->
 
@@ -66,7 +187,7 @@
 					<div class="footer-icons footer-col">
 						<p>Профили в социальных сетях:</p>
 						<div class="footer-icons-row">
-							<a href="#">
+							<a href="https://github.com/t-skoro">
 								<img
 									src="./img/icons/github.svg"
 									alt="github"
@@ -110,6 +231,12 @@
 					<!-- //footer-contacts -->
 				</div>
 			</div>
+			<div class="top">
+				<a href="#" class="top-link">
+					<img src="img/icons/top-arrow.svg" alt="icon: arrow top" />
+				</a>
+			</div>
 		</footer>
+		<script src="js/sidebar-menu.js"></script>
 	</body>
 </html>
